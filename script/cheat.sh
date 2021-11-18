@@ -38,7 +38,7 @@ do
 
     # $1 内存,比如100M
     # $2 占用内存时间（s）
-    ./consume_mem.sh 100 1 &
+    ./consume_mem.sh 100 1 cheat_memory &
   else
     echo "cpu:$cpu,mem:$mem" >> `dirname $0`/1.txt
   fi
