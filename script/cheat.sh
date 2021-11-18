@@ -2,7 +2,7 @@
 
 #百分比值
 min_cpu=5.0
-min_men=95.0
+min_men=20.0
 
 while true
 do
@@ -51,7 +51,7 @@ do
     # $1 内存,比如100M
     # $2 占用内存时间（s）
     # $3 目录名
-    ./consume_mem.sh $mem_commandeer 1 cheat_memory &
+    `dirname $0`/consume_mem.sh $mem_commandeer 1 cheat_memory &
   else
     echo "cpu:$cpu,mem:$mem" >> `dirname $0`/1.txt
   fi
